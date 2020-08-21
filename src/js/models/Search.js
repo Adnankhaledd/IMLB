@@ -18,7 +18,7 @@ export default class Search{
                                     </figure>
                                     <div class="results__data">
                                         <h4 class="results__name">${movie.Title}</h4>
-                                        <p class="results__author">${movie.Year}</p>
+                                        <p class="results__year">${movie.Year}</p>
                                     </div>
                                 </a>
                             </li>

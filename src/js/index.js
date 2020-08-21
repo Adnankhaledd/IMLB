@@ -38,9 +38,9 @@ const controlMovie = async() => {
         // highlight selected movie
         if(state.search) highlightSelected(id);
         // clear old movie (if exists)
-        elements.recipe.innerHTML = '';
+        elements.movie.innerHTML = '';
         // add loader
-        renderLoader(elements.recipe);
+        renderLoader(elements.movie);
         //new movie
         state.movie = new movie(id);
         await state.movie.getMovie(state.likes.isLiked(id));
@@ -86,8 +86,8 @@ elements.searchform.addEventListener('submit', e => {
     controlSearch();
 })
 // add like
-elements.recipe.addEventListener('click' , e => {
-    if(e.target.matches('.recipe__love, .recipe__love *')){
+elements.movie.addEventListener('click' , e => {
+    if(e.target.matches('.movie__love, .movie__love *')){
         controlLikes();
     }
 })

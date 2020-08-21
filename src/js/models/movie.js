@@ -24,34 +24,34 @@ export default class movie {
             this.year = res.data.Year;
             
             const markup = 
-            `<div class="recipe"> 
+            `<div class="movie"> 
                        <a href="${this.poster}" target="_blank" >
-                <figure class="recipe__fig">
+                <figure class="movie_fig">
                 
-                    <img src="${this.poster}" alt="${this.Title}" class="recipe__img">
-                    <h1 class="recipe__title">
+                    <img src="${this.poster}" alt="${this.Title}" class="movie_img">
+                    <h1 class="movie__title">
                         <span>${this.Title} </span>
                     </h1>
                 </figure></a>
-                <div class="recipe__details">
-                    <div class="recipe__info">
-                        <svg class="recipe__info-icon">
+                <div class="movie__details">
+                    <div class="movie__info">
+                        <svg class="movie__info-icon">
                             <use href="img/icons.svg#icon-stopwatch"></use>
                         </svg>
-                        <span class="recipe__info-data recipe__info-data--minutes">${this.time}</span>
-                        <span class="recipe__info-text"></span>
+                        <span class="movie__info-data movie__info-data--minutes">${this.time}</span>
+                        <span class="movie__info-text"></span>
                     </div>
-                    <div class="recipe__info">
-                        <svg class="recipe__info-icon">
+                    <div class="movie__info">
+                        <svg class="movie__info-icon">
                             <use href="img/icons.svg#icon-man"></use>
                         </svg>
-                        <span class="recipe__info-data recipe__info-data--people">${this.director}</span>
-                        <span class="recipe__info-text"></span>
+                        <span class="movie__info-data movie__info-data--people">${this.director}</span>
+                        <span class="movie__info-text"></span>
 
                         
 
                     </div>
-                    <button class="recipe__love">
+                    <button class="movie__love">
                         <svg class="header__likes">
                             <use href="img/icons.svg#icon-heart${isLiked ? '' : '-outlined'}"></use>
                         </svg>
@@ -60,84 +60,84 @@ export default class movie {
 
 
 
-                <div class="recipe__ingredients">
-                    <ul class="recipe__ingredient-list">
-                        <li class="recipe__item">
-                            <svg class="recipe__icon">
+                <div class="movie__details">
+                    <ul class="movie__detail-list">
+                        <li class="movie__item">
+                            <svg class="movie__icon">
                                 <use href="img/icons.svg#icon-check"></use>
                             </svg>
-                            <div class="recipe__count"></div>
-                            <div class="recipe__ingredient">
-                                <span class="recipe__unit"></span>
+                            <div class="movie__count"></div>
+                            <div class="movie__detail">
+                                <span class="movie__icon-info"></span>
                                <strong>Awards: </strong>${this.awards}
                             </div>
                         </li>
 
-                        <li class="recipe__item">
-                            <svg class="recipe__icon">
+                        <li class="movie__item">
+                            <svg class="movie__icon">
                                 <use href="img/icons.svg#icon-check"></use>
                             </svg>
-                            <div class="recipe__count"></div>
-                            <div class="recipe__ingredient">
-                                <span class="recipe__unit"></span>
+                            <div class="movie__count"></div>
+                            <div class="movie__detail">
+                                <span class="movie__icon-info"></span>
                                 <strong>Actors</strong>: ${this.actors};
                             </div>
                         </li>
 
-                        <li class="recipe__item">
-                            <svg class="recipe__icon">
+                        <li class="movie__item">
+                            <svg class="movie__icon">
                                 <use href="img/icons.svg#icon-check"></use>
                             </svg>
-                            <div class="recipe__count"></div>
-                            <div class="recipe__ingredient">
-                                <span class="recipe__unit"></span>
+                            <div class="movie__count"></div>
+                            <div class="movie__detail">
+                                <span class="movie__icon-info"></span>
                             <strong>Country: </strong>${this.country}
                             </div>
                         </li>
 
 
-                        <li class="recipe__item">
-                            <svg class="recipe__icon">
+                        <li class="movie__item">
+                            <svg class="movie__icon">
                                 <use href="img/icons.svg#icon-check"></use>
                             </svg>
-                            <div class="recipe__count"></div>
-                            <div class="recipe__ingredient">
-                                <span class="recipe__unit"></span>
+                            <div class="movie__count"></div>
+                            <div class="movie__detail">
+                                <span class="movie__icon-info"></span>
                                 <strong>Genre: </strong>${this.genre}
                             </div>
                         </li>
 
-                        <li class="recipe__item">
-                            <svg class="recipe__icon">
+                        <li class="movie__item">
+                            <svg class="movie__icon">
                                 <use href="img/icons.svg#icon-check"></use>
                             </svg>
-                            <div class="recipe__count"></div>
-                            <div class="recipe__ingredient">
-                                <span class="recipe__unit"></span>
+                            <div class="movie__count"></div>
+                            <div class="movie__detail">
+                                <span class="movie__icon-info"></span>
                                 <strong>Lanquage: </strong>${this.lanquage}
                             </div>
                         </li>
 
-                        <li class="recipe__item">
-                            <svg class="recipe__icon">
+                        <li class="movie__item">
+                            <svg class="movie__icon">
                                 <use href="img/icons.svg#icon-check"></use>
                             </svg>
-                            <div class="recipe__count"></div>
-                            <div class="recipe__ingredient">
-                                <span class="recipe__unit"></span>
+                            <div class="movie__count"></div>
+                            <div class="movie__detail">
+                                <span class="movie__icon-info"></span>
                                 <Strong>Metascore: </Strong>${this.metascore}
                             </div>
                         </li>
                     </ul>
                 </div>
 
-                <div class="recipe__directions">
+                <div class="movie__directions">
                     <h2 class="heading-2">plot</h2>
-                    <p class="recipe__directions-text">
+                    <p class="movie__directions-text">
                         ${this.plot}
                         
                     </p>
-                    <a class="btn-small recipe__btn" href="http://imdb.com/title/${this.imdb}" target="_blank">
+                    <a class="btn-small movie__btn" href="http://imdb.com/title/${this.imdb}" target="_blank">
                         <span>view in imdb</span>
                         <svg class="search__icon">
                             <use href="img/icons.svg#icon-triangle-right"></use>
@@ -150,7 +150,7 @@ export default class movie {
              
         
             `
-            document.querySelector('.recipe').innerHTML = markup;
+            document.querySelector('.movie').innerHTML = markup;
                   
             
             

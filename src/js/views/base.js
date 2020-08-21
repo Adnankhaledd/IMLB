@@ -6,7 +6,7 @@ export const elements = {
     searchInput: document.querySelector('.search__field'),
     searchResList: document.querySelector('.results__list'),
     searchResPages: document.querySelector('.results__pages'),
-    recipe: document.querySelector('.recipe')
+    movie: document.querySelector('.movie')
 }
 // add loader
 export const renderLoader = parent => {
@@ -41,7 +41,7 @@ export const highlightSelected = id => {
 
 export const toggleLikedBtn = isLiked => {
     const iconString = isLiked ?  'icon-heart' : 'icon-heart-outlined';
-    document.querySelector('.recipe__love use').setAttribute('href',`img/icons.svg#${iconString}`)
+    document.querySelector('.movie__love use').setAttribute('href',`img/icons.svg#${iconString}`)
 }
 
 export const toogleLikeMenu = numLikes => {
@@ -58,7 +58,7 @@ export const renederLikes = likes =>  {
             </figure>
             <div class="likes__data">
                 <h4 class="likes__name">${likes.title}</h4>
-                <p class="likes__author">${likes.year}</p>
+                <p class="likes__year">${likes.year}</p>
             </div>
         </a>
     </li>
