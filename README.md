@@ -12,6 +12,4 @@ After selecting:
 
 ![](Images/Search.png)
 
-Like functionality
 
-![](Images/likes.png)
