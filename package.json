@@ -11,8 +11,14 @@
   "author": "Adnan khaled",
   "license": "ISC",
   "devDependencies": {
+<<<<<<< HEAD
     "webpack": "^4.46.0",
     "webpack-cli": "^4.4.0",
     "webpack-dev-server": "^3.11.2"
+=======
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.11"
+>>>>>>> 0f1721f105d27797d4acdca197fffeab3e04b03b
   }
 }
