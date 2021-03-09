@@ -369,6 +369,7 @@ body {
     align-items: center; }
     .movie__info:not(:last-child) {
       margin-right: 4rem; }
+
   .movie__info-icon {
     height: 2rem;
     width: 2rem;
@@ -376,7 +377,7 @@ body {
     margin-right: 1rem; }
   .movie__info-data {
     margin-right: .4rem;
-    font-weight: 600; }
+    font-weight: 600; } 
   .movie__info-buttons {
     display: flex;
     margin-left: 1.5rem;
@@ -413,7 +414,7 @@ body {
     
   }
   .movie__details {
-    padding: 4rem 5rem;
+    padding: 8rem 3rem 3rem 3rem;
     font-size: 2rem;
     line-height: 1.4;
     background-color: #F2EFEE;
