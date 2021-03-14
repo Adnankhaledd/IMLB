@@ -7,7 +7,7 @@ export default class Search{
     }
     async  getResults(query){
         try{
-        const res = await axios(`http://www.omdbapi.com/?s=${this.query}&apikey=e7af34ff`);
+        const res = await axios(`https://www.omdbapi.com/?s=${this.query}&apikey=e7af34ff`);
         this.movies = res.data.Search;
         this.movies.forEach( movie => {
                         const markUp = `
