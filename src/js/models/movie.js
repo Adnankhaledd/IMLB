@@ -6,7 +6,7 @@ export default class movie {
     }
     async  getMovie(isLiked){
         try{
-            const res = await axios(`http://www.omdbapi.com/?i=${this.id}&apikey=e7af34ff`);
+            const res = await axios(`https://www.omdbapi.com/?i=${this.id}&apikey=e7af34ff`);
             console.log(res)
             this.Title = res.data.Title;
             this.plot = res.data.Plot
@@ -137,7 +137,7 @@ export default class movie {
                         ${this.plot}
                         
                     </p>
-                    <a class="btn-small movie__btn" href="http://imdb.com/title/${this.imdb}" target="_blank">
+                    <a class="btn-small movie__btn" href="https://imdb.com/title/${this.imdb}" target="_blank">
                         <span>view in imdb</span>
                         <svg class="search__icon">
                             <use href="img/icons.svg#icon-triangle-right"></use>
